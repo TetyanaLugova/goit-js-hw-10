@@ -9,21 +9,38 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     border-color: #2e2f42;
+    cursor: pointer;
+}
+#datetime-picker:disabled{
+    background: #fafafa;
 }
 button{
     border-radius: 8px;
     padding: 8px 16px;
     width: 75px;
     height: 40px;
-    background: #cfcfcf;
+    background: #4e75ff;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #989898;
+    color: #fff;
     border: none;
-}
+    cursor: pointer;
+    }
+button:hover{
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    height: 40px;
+    background: #6c8cff;
+    color: #fff;
+    }
+button:disabled{
+    background: #cfcfcf;
+    color: #989898;
+}    
 
 .timer{
     font-family: "Montserrat", sans-serif;
