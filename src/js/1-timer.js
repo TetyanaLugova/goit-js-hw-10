@@ -8,6 +8,8 @@ const inputRef = document.querySelector("#datetime-picker");
 const btnRef = document.querySelector("button");
 const timerRef=document.querySelectorAll(".value")
 
+btnRef.disabled = true;
+
 let userSelectedDate;
 let interval;
 
@@ -63,10 +65,10 @@ function addLeadingZero(value) {
 };
 
 btnRef.addEventListener('click', (event) => {
+    btnRef.disabled = true;
    const timerRepeat = setInterval(() => {
     interval = userSelectedDate - new Date();
        if (interval < 1) {
-        btnRef.disabled = true; 
       clearInterval(timerRepeat);
       return;
     }
